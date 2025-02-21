@@ -8,6 +8,24 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.texto{
+    font-family: Bangers;
+}
+
+.img {
+    align-items: center
+}
+.h3 {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meu-icone:hover {
+    color: white;
+}
+
+
+
 /* Estilos do Navbar */
 /*nav {*/
 /*    display: flex;*/
