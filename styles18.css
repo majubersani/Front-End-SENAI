@@ -1,0 +1,102 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #e6f0ff; /* azul claro de fundo */
+    color: #0d1a33; /* azul escuro para textos */
+}
+
+#error {
+    color: #ff4d4f; /* vermelho para erros */
+}
+
+#spinner {
+    display: none;
+}
+
+/* Cards compridos, um embaixo do outro */
+.card {
+    width: 100%; /* ocupa toda a linha */
+    max-width: 700px; /* limite para não ficar gigante em telas grandes */
+    margin: 10px auto 20px auto; /* centralizado com margem inferior maior */
+    background-color: #cce0ff; /* azul claro */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: row; /* imagem e conteúdo lado a lado */
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    width: 250px; /* largura fixak para a imagem */
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* Personalização dos textos dentro dos cards */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0d1a33;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    color: #1a2a4d;
+}
+
+.card-text.categoria {
+    font-style: italic;
+    color: #254eda;
+}
+
+.card-text.preco {
+    font-weight: bold;
+    color: #003d99;
+    font-size: 1rem;
+}
+
+/* Botão "Carregar Produtos" */
+#btn-load {
+    background-color: #3366ff;
+    border-color: #3366ff;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#btn-load:hover {
+    background-color: #254eda;
+    transform: scale(1.02);
+}
+
+/* Botão "Comprar" */
+.btn-comprar {
+    background-color: #3399ff;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+}
+
+.btn-comprar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
